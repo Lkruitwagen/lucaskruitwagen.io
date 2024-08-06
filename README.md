@@ -1,2 +1,6 @@
-# lucaskruitwagen.io
-A personal website and also an opportunity to practise React.
+# Lucas's Personal Website
+
+## Get Develop'in:
+
+1. npm run install
+2. npm run dev
