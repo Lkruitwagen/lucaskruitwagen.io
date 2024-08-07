@@ -12,9 +12,13 @@ export default function Navbar(props) {
 
     React.useEffect(() => {
         if (isDark) {
+            document.body.classList.remove("light");
             document.body.classList.add("dark");
+            document.getElementById("lk-img").src = "/psychadelic-lk-green-dark.png";
         } else {
             document.body.classList.remove("dark");
+            document.body.classList.add("light");
+            document.getElementById("lk-img").src = "/psychadelic-lk-green.png";
         }
 
     }, [isDark])

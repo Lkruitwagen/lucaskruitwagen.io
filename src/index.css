@@ -48,6 +48,21 @@
 
 }
 
+.two--col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.light {
+  /* forces light color-scheme */
+  color-scheme: light;
+}
+.dark {
+  /* forces dark color-scheme */
+  color-scheme: dark;
+}
+
 a {
   font-weight: 500;
   color: inherit;
@@ -55,10 +70,8 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary-l600) ;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
 }
-
-
 
 body {
   margin: 0;
@@ -67,22 +80,57 @@ body {
   place-items: center;
   min-width: 520px;
   min-height: 100vh;
-  color: black;
-  background-color: var(--color-surface-l100);
-}
-
-body.dark {
-  color: white;
-  background-color: var(--color-surface-d100);
+  color: light-dark(black,white);
+  background-color: light-dark(var(--color-surface-l100), var(--color-surface-d100));
 }
 
 .layout {
+  padding-top: 5rem;
   width: var(--content-width);
 }
 
-.main {
-  padding-top: 4rem;
+.introduction {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
 }
+
+.introduction > span {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.introduction > p {
+  text-align: justify;
+}
+
+.introduction > p > a {
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.introduction > p > a:hover {
+  color: light-dark(var(--color-primary-l500),var(--color-primary-d500) );
+}
+
+#photo--border {
+  background-color: light-dark(var(--color-surface-l200),var(--color-surface-d200) );
+  border-radius: 3rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+#photo--border > img {
+  border-radius: 3rem;
+  width: 100%;
+}
+
+#socials--container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -93,15 +141,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3.4rem;
   position: fixed;
   width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
   padding: 1.25rem 0;
+  border-bottom: solid light-dark(var(--color-surface-l300),var(--color-surface-d300) );
 }
-
-
 
 nav > div {
   display: flex;
@@ -112,12 +158,12 @@ nav > div {
 nav > div > ul {
   list-style-type: none;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
 }
 
 nav > div > ul > li { 
   display: inline;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 nav > div > ul > li > a {
