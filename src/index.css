@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", "Space Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -42,22 +42,30 @@
   --color-surface-d500: #727479;
   --color-surface-d600: #8c8f93;
 
+  --content-width: 860px;
+  --content-width--small: 560px;
+  --content-width--medium: 700px;
+
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: inherit;
   text-decoration: inherit;
 }
+
 a:hover {
-  color: #535bf2;
+  color: var(--color-primary-l600) ;
 }
+
+
 
 body {
   margin: 0;
   display: flex;
+  flex-flow: column nowrap;
   place-items: center;
-  min-width: 320px;
+  min-width: 520px;
   min-height: 100vh;
   color: black;
   background-color: var(--color-surface-l100);
@@ -68,6 +76,14 @@ body.dark {
   background-color: var(--color-surface-d100);
 }
 
+.layout {
+  width: var(--content-width);
+}
+
+.main {
+  padding-top: 4rem;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -76,10 +92,16 @@ h1 {
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 3.4rem;
-  position: relative;
+  position: fixed;
+  width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.25rem 0;
 }
+
+
 
 nav > div {
   display: flex;
@@ -87,12 +109,28 @@ nav > div {
   justify-content: center;
 }
 
+nav > div > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav > div > ul > li { 
+  display: inline;
+  padding: 1rem;
+}
+
+nav > div > ul > li > a {
+  font-weight: 300;
+}
+
 nav > div > span {
-  font-size: 14.461px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -1.085px;
+  font-family: "Space Grotesk";
 }
 
 nav > div > img {
@@ -119,15 +157,23 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.dark--button {
+  padding: 2px;
+  background-color: inherit;
+  border: none;
+  transition: none;
+  text-align: center;
+  vertical-align: baseline;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dark--button:hover {
+  border: none;
+  transition: none;
+}
+
+.dark--button:focus,
+.dark--button:focus-visible {
+  outline: none;
 }
