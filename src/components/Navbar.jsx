@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
 
@@ -23,15 +24,16 @@ export default function Navbar(props) {
 
     return (
         <nav>
-            <div>
+            <Link to="/">
                 <span> Lucas Kruitwagen</span>
-            </div>
+            </Link>
+                
             <div>
                 <ul>
                     <li><a href="/blog">writing</a></li>
                     <li><a href="/speaking">speaking</a></li>
                     <li><a href="/code">open source</a></li>
-                    <li><a href="/about">about</a></li>
+                    <li><Link to="/about">about</Link></li>
                 </ul>
                 <button className="dark--button" onClick={darkToggle}>
                     {isDark ? <img src="/sun.svg" /> : <img src="/moon.svg" />}

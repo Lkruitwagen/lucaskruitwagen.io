@@ -136,6 +136,30 @@ body {
   color: light-dark(var(--color-primary-l500),var(--color-primary-d500) );
 }
 
+.introduction--cv {
+  padding: 0 1rem 0 0;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.introduction--cv--top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.introduction--cv > p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+
+}
+
+.introduction--cv--stars {
+  color: var(--color-primary-d100);
+  width: 68px;
+}
+
 #photo--border {
   background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
   border-radius: 3rem;
@@ -195,7 +219,7 @@ nav > div > ul > li > a {
   font-weight: 300;
 }
 
-nav > div > span {
+nav > a > span {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
