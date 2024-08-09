@@ -8,8 +8,6 @@ export default function Navbar(props) {
         setIsDark(prevDark => (!prevDark));
     }
 
-    console.log(isDark)
-
     React.useEffect(() => {
         if (isDark) {
             document.body.classList.remove("light");

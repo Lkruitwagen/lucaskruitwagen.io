@@ -20,6 +20,8 @@
   
   /** CSS LIGHT THEME SURFACE COLORS */
   --color-surface-l100: #ffffff;
+  --color-surface-l150: #e8e8e8;
+  /* --color-surface-l150: #bcbec0; */
   --color-surface-l200: #8c8f93;
   --color-surface-l300: #727479;
   --color-surface-l400: #595b61;
@@ -46,6 +48,26 @@
   --content-width--small: 560px;
   --content-width--medium: 700px;
 
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: light-dark(var(--color-surface-l100), var(--color-surface-d100));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: light-dark(var(--color-surface-l150), var(--color-surface-d200));
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: light-dark(var(--color-surface-l200), var(--color-surface-d300));
 }
 
 .two--col {
@@ -86,6 +108,7 @@ body {
 
 .layout {
   padding-top: 5rem;
+  padding-bottom: 5rem;
   width: var(--content-width);
 }
 
@@ -97,10 +120,11 @@ body {
 
 .introduction > span {
   font-size: 3em;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .introduction > p {
+  font-weight: 300;
   text-align: justify;
 }
 
@@ -113,7 +137,7 @@ body {
 }
 
 #photo--border {
-  background-color: light-dark(var(--color-surface-l200),var(--color-surface-d200) );
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
   border-radius: 3rem;
   padding: 2rem;
   margin-top: 2rem;
@@ -147,6 +171,7 @@ nav {
   margin-right: auto;
   padding: 1.25rem 0;
   border-bottom: solid light-dark(var(--color-surface-l300),var(--color-surface-d300) );
+  background-color: light-dark(var(--color-surface-l100),var(--color-surface-d100) );
 }
 
 nav > div {
@@ -173,10 +198,10 @@ nav > div > ul > li > a {
 nav > div > span {
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -1.085px;
-  font-family: "Space Grotesk";
+  font-family: "Space Mono";
 }
 
 nav > div > img {
@@ -196,7 +221,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
 }
 button:focus,
 button:focus-visible {
@@ -222,4 +247,153 @@ button:focus-visible {
 .dark--button:focus,
 .dark--button:focus-visible {
   outline: none;
+}
+
+.highlights {
+  margin-top: 2rem;
+}
+
+.highlights--header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.highlights--header > span {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.highlights--header > form > button {
+  font-weight: 300;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+}
+
+.highlight {
+  padding: 0.5rem 0 0.7rem 0;
+  border-bottom: solid light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+}
+
+.highlight--title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+.highlight--title > span {
+  font-size: 1.0rem;
+  font-weight: 500;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.highlight--title > p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
+  margin: 0px;
+}
+
+.highlight--links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d500) );
+}
+
+.highlight--links > form > button {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 0.8rem;
+  font-weight: 300;
+  gap: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  align-items: center;
+  color: inherit;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+}
+
+.highlight--links > form > button > svg {
+  width: 12px;
+  fill: currentColor;
+}
+
+.codecards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.codecard {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 200px;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+}
+
+.codecard--detail {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.codecard--content {
+  width: 100%;
+}
+
+.codecard--detail > span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.0rem;
+  font-weight: 700;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.codecard--title {
+  text-align: left;
+  padding: 4px 0px;
+}
+
+.codecard--title > span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  }
+
+.codecard--desc {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: left;
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d500) );
+}
+
+.codecard--desc > p {
+  margin: 4px 0 10px 0;
+}
+
+.codecard--icon {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.codecard--icon > p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.codecard--star > svg {
+  stroke-width: 100;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.codecard--star > p {
+  font-family: "IBM Plex Mono", monospace;
 }
