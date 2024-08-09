@@ -156,7 +156,7 @@ body {
 }
 
 .introduction--cv--stars {
-  color: var(--color-primary-d100);
+  color: light-dark(var(--color-primary-l600),(--color-primary-d600));
   width: 68px;
 }
 
