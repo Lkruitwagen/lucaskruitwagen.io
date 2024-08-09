@@ -12,7 +12,34 @@ const BusinessCardAbout = () => {
             <div className="two--col">
                 <div className="introduction"> 
                     <span> About me. </span>
-                    <div className="introduction--cv">
+                    <p>
+                        I'm a technical founder with domain expertise in energy systems, weather, and climate.
+                        My technical edges are in machine learning, especially with earth observation and weather data; 
+                        numerical optimisation, particularly mixed integer linear programming;
+                        and in software engineering and technical leadership.
+                    </p>
+                    <p>
+                        Most recently I was the CTO of <a href="https://www.transitionzero.org/">TransitionZero</a>, a climate-tech not-for-profit. 
+                        I led a 20-person engineering team, comprised of front-end and back-end developers, data engineers, and machine learning engineers.
+                        We built a platform for energy systems modelling - the numerical analysis tooling that provides projections of the energy system, 
+                        used in everything from motivating new investment decisions to designing net-zero emissions grids.
+                    </p>
+                </div>
+                <div id="photo--border">
+                    <img id="lk-img" src="/psychadelic-lk-green.png"/>
+                </div>
+            </div>
+            <div className="introduction">
+                <p>
+                    Prior to TransitionZero, I was the technical founder of Oxford Earth Observation (OxEO), now <a href="https://www.wtrmrq.com/">Watermarq</a>.
+                    OxEO was founded at a water risk company using satellite data and computational hydrology to predict water scarcity.
+                    I was also a researcher and project leader with the <a href="https://fdleurope.org/">Frontier Development Lab</a>, an ESA-funded EO+ML research lab.
+                    I did my DPhil in Economic Geography at the University of Oxford, where I held affiliations with the <a href="https://www.smithschool.ox.ac.uk/">Smith School of Enterprise and the Environment</a>,
+                    the <a href="https://www.inet.ox.ac.uk/">Institute for New Economic Thinking</a>, and the <a href="https://www.smithschool.ox.ac.uk/oxford-sustainable-finance-group/research/sustainable-finance">Sustainable Finance Group</a>.
+                    I started my career as a mechanical engineer, working on the design and delivery of building energy systems and integrated renewables.
+                </p>
+                <span> Profile </span>
+                <div className="introduction--cv">
                         <div className="introduction--cv--top">
                             <span>
                                 Tech Leadership
@@ -77,35 +104,11 @@ const BusinessCardAbout = () => {
                             Figma; HTML; CSS; JS; React
                         </p>
                     </div>
-                </div>
-                <div id="photo--border">
-                    <img id="lk-img" src="/psychadelic-lk.png"/>
-                </div>
+                    <p>
+                        My full CV can be found here.
+                    </p>
             </div>
-            <div className="introduction">
-                <p>
-                    I'm a technical founder with domain expertise in energy systems, weather, and climate.
-                    My technical edges are in machine learning, especially with earth observation and weather data; 
-                    numerical optimisation, particularly mixed integer linear programming;
-                    and in software engineering and technical leadership.
-                </p>
-                <p>
-                    Most recently I was the CTO of TransitionZero, a climate-tech not-for-profit. 
-                    I led a 20-person engineering team, comprised of front-end and back-end developers, data engineers, and machine learning engineers.
-                    We built a platform for energy systems modelling - the numerical analysis tooling that provides projections of the energy system, 
-                    used in everything from motivating new investment decisions to designing net-zero emissions grids.
-                </p>
-                <p>
-                    Prior to TransitionZero, I was the technical founder of Oxford Earth Observation (OxEO), now Watermarq.
-                    OxEO was founded at a water risk company using satellite data and computational hydrology to predict water scarcity.
-                    I did my DPhil in Economic Geography at the University of Oxford, where I held affiliations with the Smith School of Enterprise and the Environment,
-                    the Institute for New Economic Thinking, and the Sustainable Finance Group.
-                    I started my career as a mechincal engineer, working on the design and delivery of building energy systems and integrated renewables.
-                </p>
-                <p>
-                    My full CV can be found here.
-                </p>
-            </div>
+            
         </div>
     );
   }
@@ -136,7 +139,7 @@ const BusinessCardHome = () => {
             
             <div>
                 <div id="photo--border">
-                    <img id="lk-img" src="/psychadelic-lk.png"/>
+                    <img id="lk-img" src="/psychadelic-lk-green.png"/>
                 </div>
             </div>
         </div>
