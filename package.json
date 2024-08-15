@@ -17,7 +17,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-multi-select-component": "^4.3.4",
     "react-router-dom": "^6.26.0",
+    "react-select": "^5.8.0",
     "yaml-loader": "^0.8.1"
   },
   "devDependencies": {
