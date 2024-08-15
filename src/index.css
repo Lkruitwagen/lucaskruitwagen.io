@@ -156,7 +156,7 @@ body {
 }
 
 .introduction--cv--stars {
-  color: light-dark(var(--color-primary-l600),(--color-primary-d600));
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600));
   width: 68px;
 }
 
@@ -421,4 +421,24 @@ button:focus-visible {
 
 .codecard--star > p {
   font-family: "IBM Plex Mono", monospace;
+}
+
+.tagbox {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+
+.tagbox > button {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2rem;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d600) );
+}
+
+.select__control {
+  border-radius: 2rem;
 }

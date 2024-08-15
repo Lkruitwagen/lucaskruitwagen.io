@@ -105,7 +105,7 @@ const BusinessCardAbout = () => {
                         </p>
                     </div>
                     <p>
-                        My full CV can be found here.
+                        My full CV can be found <a href="">here</a>.
                     </p>
             </div>
             
