@@ -1,16 +1,17 @@
 import { useState } from 'react'
-import Index from "../data/index.yaml";
+import CodeData from "../data/code.yaml";
+import BlogData from "../data/blog.yaml";
 import CodeCard from '../components/CodeCard'
 import BusinessCard from '../components/BusinessCard'
 import Highlights from '../components/Highlights'
 
 export default function Home() {
 
-  const sorted_index = Index.blog.sort((a,b) => {
+  const sorted_index = BlogData.sort((a,b) => {
     return b.date - a.date
   })
 
-  const code_cards = Index.code.filter(
+  const code_cards = CodeData.filter(
     (code) => code.highlight
   ).sort((a,b) => {
     return b.date - a.date

@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import Select  from "react-select";
-import Index from "../data/index.yaml";
+import BlogData from "../data/blog.yaml";
+
+const all_tags = BlogData.map((blog) => blog.tags).flat(Infinity).sort();
+
+let options = [...new Set(all_tags)].map((tag) => {
+    return {'label':tag, 'value':tag}
+});
 
 function Tag(props) {
 
@@ -23,11 +29,23 @@ function Tag(props) {
     );
 }
 
-const all_tags = Index.blog.map((blog) => blog.tags).flat(Infinity).sort();
 
-let options = [...new Set(all_tags)].map((tag) => {
-    return {'label':tag, 'value':tag}
-});
+function Entry(props) {
+
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+    return (
+        <div className="blog--entry">
+            <div className="blog--entry--header">
+                <span>{props.post.title}</span>
+                <p>
+                    {months[props.post.date.getMonth()] + " " + props.post.date.getFullYear()}
+                </p>
+            </div>
+            
+        </div>
+    )
+}
 
 
 export default function Blog() {
@@ -35,9 +53,6 @@ export default function Blog() {
     const [selected, setSelected] = useState([]);
 
     const selected_keys = selected.map((option) => option.value);
-
-    console.log('selected',selected)
-    console.log('selected_keys',selected_keys)
 
     let tags = options.filter(option => !selected_keys.includes(option.value)).map((option) => {
         return (
@@ -48,8 +63,6 @@ export default function Blog() {
             />
         )
         });
-
-    console.log('tags',tags);
 
     const select_styles= {
         control: (baseStyles, state) => ({
@@ -74,12 +87,25 @@ export default function Blog() {
         }),
       }
 
+    const entries = BlogData.filter((blog) => {
+        return (blog.tags.some(tag => selected_keys.includes(tag)) | !selected_keys.length) 
+    }).sort((a,b) => {
+        return b.date - a.date
+      }).map((blog) => {
+        return (
+            <Entry
+                key={blog.title}
+                post={blog}
+            />
+        )
+    })
+
     return (
         <div className="layout">
             <div className="introduction"> 
                     <span> Writing </span>
             </div>
-            <div>
+            <div className="select--container">
                 <Select
                     options={options}
                     value={selected}
@@ -94,6 +120,9 @@ export default function Blog() {
             </div>
             <div className="tagbox">
                 {tags}
+            </div>
+            <div className="entries">
+                {entries}
             </div>
         </div>
     );
