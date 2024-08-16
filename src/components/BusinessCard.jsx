@@ -26,7 +26,7 @@ const BusinessCardAbout = () => {
                     </p>
                 </div>
                 <div id="photo--border">
-                    <img id="lk-img" src="/psychadelic-lk-green.png"/>
+                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
                 </div>
             </div>
             <div className="introduction">
@@ -101,7 +101,7 @@ const BusinessCardAbout = () => {
                             </div>
                         </div>
                         <p>
-                            Figma; HTML; CSS; JS; React
+                            HTML; CSS; JS; React; Figma
                         </p>
                     </div>
                     <p>
@@ -115,6 +115,11 @@ const BusinessCardAbout = () => {
 
 
 const BusinessCardHome = () => {
+
+    console.log('classes',document.body.classList)
+
+    const img_src = "/psychadelic-lk-green.png"
+
     return (
         <div className="two--col">
             <div className="introduction"> 
@@ -139,7 +144,7 @@ const BusinessCardHome = () => {
             
             <div>
                 <div id="photo--border">
-                    <img id="lk-img" src="/psychadelic-lk-green.png"/>
+                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
                 </div>
             </div>
         </div>

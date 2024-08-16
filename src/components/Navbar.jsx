@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
 
-    const [isDark, setIsDark] = React.useState(false)
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    const [isDark, setIsDark] = React.useState(prefersDark)
+
+    console.log('isDark', isDark)
 
     function darkToggle() {
         setIsDark(prevDark => (!prevDark));
@@ -11,19 +15,34 @@ export default function Navbar(props) {
 
     React.useEffect(() => {
 
-        let img_src = document.getElementById("lk-img")
+        let img_srcs = [
+            "lk-img",
+            "ac-logo",
+            "ms-logo",
+            "ox-logo",
+            "bp-logo",
+            "pm-logo"
+        ]       
+            
         
         if (isDark) {
             document.body.classList.remove("light");
             document.body.classList.add("dark");
-            if (img_src !== null) {
-                img_src.src = "/psychadelic-lk-green-dark.png";
+
+            for (let img_src of img_srcs) {
+                let img_ob = document.getElementById(img_src)
+                if (img_ob !== null) {
+                    img_ob.src = img_ob.src.replace('light','dark');
+                }
             }
         } else {
             document.body.classList.remove("dark");
             document.body.classList.add("light");
-            if (img_src !== null) {
-                img_src.src = "/psychadelic-lk-green.png";
+            for (let img_src of img_srcs) {
+                let img_ob = document.getElementById(img_src)
+                if (img_ob !== null) {
+                    img_ob.src = img_ob.src.replace('dark','light');
+                }
             }
         }
 
