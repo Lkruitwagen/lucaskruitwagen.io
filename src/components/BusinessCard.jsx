@@ -4,8 +4,121 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGoogleScholar } from '@fortawesome/free-brands-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-function BusinessCard(props) {
+const BusinessCardAbout = () => {
+    return (
+        <div>
+            <div className="two--col">
+                <div className="introduction"> 
+                    <span> About me. </span>
+                    <p>
+                        I'm a technical founder with domain expertise in energy systems, weather, and climate.
+                        My technical edges are in machine learning, especially with earth observation and weather data; 
+                        numerical optimisation, particularly mixed integer linear programming;
+                        and in software engineering and technical leadership.
+                    </p>
+                    <p>
+                        Most recently I was the CTO of <a href="https://www.transitionzero.org/">TransitionZero</a>, a climate-tech not-for-profit. 
+                        I led a 20-person engineering team, comprised of front-end and back-end developers, data engineers, and machine learning engineers.
+                        We built a platform for energy systems modelling - the numerical analysis tooling that provides projections of the energy system, 
+                        used in everything from motivating new investment decisions to designing net-zero emissions grids.
+                    </p>
+                </div>
+                <div id="photo--border">
+                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
+                </div>
+            </div>
+            <div className="introduction">
+                <p>
+                    Prior to TransitionZero, I was the technical founder of Oxford Earth Observation (OxEO), now <a href="https://www.wtrmrq.com/">Watermarq</a>.
+                    OxEO was founded at a water risk company using satellite data and computational hydrology to predict water scarcity.
+                    I was also a researcher and project leader with the <a href="https://fdleurope.org/">Frontier Development Lab</a>, an ESA-funded EO+ML research lab.
+                    I did my DPhil in Economic Geography at the University of Oxford, where I held affiliations with the <a href="https://www.smithschool.ox.ac.uk/">Smith School of Enterprise and the Environment</a>,
+                    the <a href="https://www.inet.ox.ac.uk/">Institute for New Economic Thinking</a>, and the <a href="https://www.smithschool.ox.ac.uk/oxford-sustainable-finance-group/research/sustainable-finance">Sustainable Finance Group</a>.
+                    I started my career as a mechanical engineer, working on the design and delivery of building energy systems and integrated renewables.
+                </p>
+                <span> Profile </span>
+                <div className="introduction--cv">
+                        <div className="introduction--cv--top">
+                            <span>
+                                Tech Leadership
+                            </span>
+                            <div className="introduction--cv--stars">
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                            </div>
+                        </div>
+                        <p>
+                            Fundraising (grants+venture); business modelling; recruitment; OKRs & management; tech culture; agile (professional scrum master).
+                        </p>
+                    </div>
+                    <div className="introduction--cv">
+                        <div className="introduction--cv--top">
+                            <span>
+                                Climate-Tech Research & Development
+                            </span>
+                            <div className="introduction--cv--stars">
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                            </div>
+                        </div>
+                        <p>
+                            ML research (PyTorch+Lightning); MLOps (MLFlow, W&B); geospatial stack (postgis,STAC); HPC (xarray/zarr/dask); linear programming.
+                        </p>
+                    </div>
+                    <div className="introduction--cv">
+                        <div className="introduction--cv--top">
+                            <span>
+                                Back-End Development
+                            </span>
+                            <div className="introduction--cv--stars">
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                            </div>
+                        </div>
+                        <p>
+                            Python; Progresql; FastAPI; GraphQL; Docker; GCP (BQ, GCS, Vertex, Build, Run); Orchestration (Dagsgter, Prefect); Dev/Data/CloudOps.
+                        </p>
+                    </div>
+                    <div className="introduction--cv">
+                        <div className="introduction--cv--top">
+                            <span>
+                                Front-End Development
+                            </span>
+                            <div className="introduction--cv--stars">
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                                <FontAwesomeIcon className="icon"  icon={faStar} size='xs'/>
+                            </div>
+                        </div>
+                        <p>
+                            HTML; CSS; JS; React; Figma
+                        </p>
+                    </div>
+                    <p>
+                        My full CV can be found <a href="">here</a>.
+                    </p>
+            </div>
+            
+        </div>
+    );
+  }
+
+
+const BusinessCardHome = () => {
+
+    console.log('classes',document.body.classList)
+
+    const img_src = "/psychadelic-lk-green.png"
 
     return (
         <div className="two--col">
@@ -28,101 +141,23 @@ function BusinessCard(props) {
                     <a href="https://scholar.google.com/citations?user=Jw0EwYEAAAAJ&hl=en"><FontAwesomeIcon className="icon" icon={faGoogleScholar} size='2x'/></a>
                 </div>
             </div>
+            
             <div>
                 <div id="photo--border">
-                    <img id="lk-img" src="/psychadelic-lk.png"/>
+                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
                 </div>
             </div>
+        </div>
+    );
+  }
+
+function BusinessCard(props) {
+
+    return (
+        <div>
+            {props.is_about ? <BusinessCardAbout /> : <BusinessCardHome />}
         </div>
     )
 }
 
-function LinkSvg(props) {
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <g data-name="Layer 2">
-                <g data-name="external-link">
-                    <rect width="24" height="24" opacity="0">    </rect>
-                    <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"></path>
-                    <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"></path>
-                </g>
-            </g>
-        </svg>
-    )
-}
-
-function Link(props) {
-    return (
-        <form target="_blank">
-            <button formAction={props.url}>
-                {props.label} {props.external ? <LinkSvg /> : null}
-            </button>
-        </form>
-    )
-}
-
-function Highlight(props) {
-
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-    const links = props.links.map((link) => {
-        return (
-          <Link 
-            key={link.label}
-            label = {link.label}
-            url = {link.url}
-            external = {link.external}
-          />
-        )
-      })
-
-    return (
-        <div className="highlight">
-            <div className="highlight--title">
-                <span> {props.title} </span>
-                <p>
-                    {months[props.date.getMonth()] + " " + props.date.getFullYear()}
-                </p>
-            </div>
-            <div className="highlight--links">
-                {props.show_links ? links : null}
-            </div>
-        </div>
-    )
-}
-
-function Highlights(props) {
-    
-        const highlights = props.highlights?.filter((highlight) => (highlight.highlight && highlight.tags.includes(props.tag))).map((highlight) => {
-                return (
-                    <Highlight 
-                        key = {highlight.title}
-                        title = {highlight.title}
-                        date = {highlight.date}
-                        links = {highlight.links}
-                        show_links = {props.show_links}
-                    />
-                )
-
-        })
-    
-        return (
-            <div className="highlights">
-                <div className="highlights--header">
-                    <span> {props.tag_alias} </span>
-                    <form>
-                        <button formAction={"/blog?"+props.tag}>
-                            all {props.tag_alias.toLowerCase()}
-                        </button>
-                    </form>
-                </div>
-                
-                {highlights}
-            </div>
-        )
-}
-
-export {
-    BusinessCard,
-    Highlights
-}
+export default BusinessCard

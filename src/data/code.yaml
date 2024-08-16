@@ -1,0 +1,17 @@
+- title: TZ-OSeMOSYS
+  year: 2024
+  highlight: true
+  description: >
+    OSeMOSYS is an open source modelling system for long-run systems analysis and planning.
+    TransitionZero has rebuilt OSeMOSYS as a pip-installable Python package, including 
+    Pydantic-based model construction and validation and Linopy-based numerical optimsation and solving.
+  repo: tz-osemosys
+  org: transition-zero
+- title: The Global Fossil Fuel Supply Chain
+  year: 2022
+  highlight: true
+  description: >
+    A repo for building a network model of the global fossil fuel supply chain using asset-level data. 
+    A project in support of the Oxford Martin Programme on the Post-Carbon Transition generously supported by Microsoft AI for Earth.
+  repo: global-fossil-fuel-supply-chain
+  org: Lkruitwagen

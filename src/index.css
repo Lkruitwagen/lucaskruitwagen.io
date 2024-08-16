@@ -136,11 +136,36 @@ body {
   color: light-dark(var(--color-primary-l500),var(--color-primary-d500) );
 }
 
+.introduction--cv {
+  padding: 0 1rem 0 0;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.introduction--cv--top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.introduction--cv > p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+
+}
+
+.introduction--cv--stars {
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600));
+  width: 68px;
+}
+
 #photo--border {
   background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
   border-radius: 3rem;
   padding: 2rem;
   margin-top: 2rem;
+  height: 358px;
 }
 
 #photo--border > img {
@@ -195,7 +220,7 @@ nav > div > ul > li > a {
   font-weight: 300;
 }
 
-nav > div > span {
+nav > a > span {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -289,7 +314,18 @@ button:focus-visible {
 }
 
 .highlight--title > p {
+  font-.highlight--title > span {
+  font-size: 1.0rem;
+  font-weight: 500;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.highlight--title > p {
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
+  margin: 0px;
+}family: 'IBM Plex Mono', monospace;
   font-size: 0.8rem;
   color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
   margin: 0px;
@@ -396,4 +432,137 @@ button:focus-visible {
 
 .codecard--star > p {
   font-family: "IBM Plex Mono", monospace;
+}
+
+.tagbox {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+
+.tagbox > button {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2rem;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d600) );
+}
+
+.select--container {
+  padding: 12px 0 2px 0px;
+}
+
+.entries {
+  margin: 2rem 0 1rem 0;
+}
+
+.blog--entry {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5rem 0 0.7rem 0;
+  border-bottom: solid light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+}
+
+.blog--entry--header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  align-items: end;
+}
+
+.blog--entry--header > span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.blog--entry--header > p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
+  margin: 0px;
+}
+
+.logo--imgs {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.logo--imgs > img {
+  max-height: 80px;
+  opacity: 0.5;
+}
+
+.quotebox {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.quotebox > span {
+  font-weight: 500;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.quotebox > p {
+  margin: 4px 0 16px 8px;
+  font-weight: 300;
+}
+
+.engagement {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem 0;
+}
+
+.engagement--title > span {
+  font-size: 1.5em;
+  line-height: 1.0;
+  font-weight: 400;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.engagement--content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin: 0.4rem 0;
+}
+
+.engagement--content > p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 300;
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d500) );
+}
+
+.engagement--links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d500) );
+}
+
+.engagement--links > form > button {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 0.8rem;
+  font-weight: 300;
+  gap: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  align-items: center;
+  color: inherit;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+}
+
+.engagement--links > form > button > svg {
+  width: 12px;
+  fill: currentColor;
 }
