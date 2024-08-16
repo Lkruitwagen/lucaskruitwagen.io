@@ -3,7 +3,7 @@ import CodeData from "../data/code.yaml";
 import BlogData from "../data/blog.yaml";
 import CodeCard from '../components/CodeCard'
 import BusinessCard from '../components/BusinessCard'
-import Highlights from '../components/Highlights'
+import {Highlights} from '../components/Highlights'
 
 export default function Home() {
 

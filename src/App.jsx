@@ -9,6 +9,8 @@ import Code from './pages/code';
 
 export default function App() {
 
+  // https://ui.dev/react-router-url-parameters
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

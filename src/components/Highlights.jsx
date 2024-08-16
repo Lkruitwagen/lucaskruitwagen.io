@@ -14,7 +14,7 @@ function LinkSvg(props) {
     )
 }
 
-function Link(props) {
+function LinkButton(props) {
     return (
         <form target="_blank">
             <button formAction={props.url}>
@@ -30,7 +30,7 @@ function Highlight(props) {
 
     const links = props.links.map((link) => {
         return (
-          <Link 
+          <LinkButton
             key={link.label}
             label = {link.label}
             url = {link.url}
@@ -54,7 +54,7 @@ function Highlight(props) {
     )
 }
 
-export default function Highlights(props) {
+function Highlights(props) {
     
         const highlights = props.highlights?.filter((highlight) => (highlight.highlight && highlight.tags.includes(props.tag))).map((highlight) => {
                 return (
@@ -84,3 +84,5 @@ export default function Highlights(props) {
             </div>
         )
 }
+
+export { Highlights, LinkButton }
