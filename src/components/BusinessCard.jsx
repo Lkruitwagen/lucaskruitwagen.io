@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -105,7 +106,7 @@ const BusinessCardAbout = () => {
                         </p>
                     </div>
                     <p>
-                        My full CV can be found <a href="">here</a>.
+                        My CV can be found <a href="/lk_cv_2024.pdf">here</a>.
                     </p>
             </div>
             
@@ -130,8 +131,8 @@ const BusinessCardHome = () => {
                     I’m  building open, accessible tools to help get us there.
                 </p>
                 <p>
-                    This is my personal site - a precis of my <a href="/writing">research</a>, <a href="/writing">technical</a>, and <a href="/writing">personal</a> writing;  
-                    <a href="/speaking"> speaking and teaching engagements</a>; and my <a href="/code">open source contributions</a>. 
+                    This is my personal site - a precis of my <Link to="/blog?tags=research">research</Link>, <Link to="/blog?tags=technical">technical</Link>, and <Link to="/blog?tags=personal">personal</Link> writing;  
+                    <Link to="/speaking"> speaking and teaching engagements</Link>; and my <Link to="/code">open source contributions</Link>. 
                     If you want to chat about something, <a href="mailto:hello@lucaskruitwagen.io">get in touch!</a> Or follow along:
                 </p>
                 <div id="socials--container">

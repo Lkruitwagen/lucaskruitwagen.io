@@ -56,9 +56,9 @@ export default function Navbar(props) {
                 
             <div>
                 <ul>
-                    <li><a href="/blog">writing</a></li>
-                    <li><a href="/speaking">speaking</a></li>
-                    <li><a href="/code">open source</a></li>
+                    <li><Link to="/blog">writing</Link></li>
+                    <li><Link to="/speaking">speaking</Link></li>
+                    <li><Link to="/code">open source</Link></li>
                     <li><Link to="/about">about</Link></li>
                 </ul>
                 <button className="dark--button" onClick={darkToggle}>
