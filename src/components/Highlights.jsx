@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 function LinkSvg(props) {
     return (
@@ -42,7 +43,7 @@ function Highlight(props) {
     return (
         <div className="highlight">
             <div className="highlight--title">
-                <span> {props.title} </span>
+                <span> <Link to={"/blog/"+props.slug}>{props.title}</Link> </span>
                 <p>
                     {months[props.date.getMonth()] + " " + props.date.getFullYear()}
                 </p>
@@ -55,12 +56,15 @@ function Highlight(props) {
 }
 
 function Highlights(props) {
+
+        console.log('props - tag', props.tag);
     
         const highlights = props.highlights?.filter((highlight) => (highlight.highlight && highlight.tags.includes(props.tag))).map((highlight) => {
                 return (
                     <Highlight 
                         key = {highlight.title}
                         title = {highlight.title}
+                        slug = {highlight.slug}
                         date = {highlight.date}
                         links = {highlight.links}
                         show_links = {props.show_links}
@@ -73,11 +77,11 @@ function Highlights(props) {
             <div className="highlights">
                 <div className="highlights--header">
                     <span> {props.tag_alias} </span>
-                    <form>
-                        <button formAction={"/blog?"+props.tag}>
+                    <Link to={"/blog?tags="+props.tag}>
+                        <button formAction={"/blog?tags="+props.tag}>
                             all {props.tag_alias.toLowerCase()}
                         </button>
-                    </form>
+                    </Link>
                 </div>
                 
                 {highlights}

@@ -289,7 +289,7 @@ button:focus-visible {
   font-weight: 400;
 }
 
-.highlights--header > form > button {
+.highlights--header > a > button {
   font-weight: 300;
   background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
 }
@@ -473,7 +473,7 @@ button:focus-visible {
   align-items: end;
 }
 
-.blog--entry--header > span {
+.blog--entry--header > a > span {
   font-size: 1.1rem;
   font-weight: 500;
   color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
@@ -565,4 +565,64 @@ button:focus-visible {
 .engagement--links > form > button > svg {
   width: 12px;
   fill: currentColor;
+}
+
+.entry--title {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.entry--title > span {
+  font-size: 1.5em;
+  line-height: 1.0;
+  font-weight: 400;
+  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
+}
+
+.entry--byline {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: end;
+  gap: 0.5rem;
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+.entry--byline > p {
+  font-weight: 300;
+  margin: 0;
+}
+
+.entry--abstract {
+  font-weight: 300;
+  text-align: justify;
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d500) );
+}
+
+.entry--linkbox {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.entry--linkbox > form > button {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 0.8rem;
+  font-weight: 300;
+  gap: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  align-items: center;
+  color: inherit;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+}
+
+.entry--linkbox > form > button > svg {
+  width: 12px;
+  fill: currentColor;
+}
+
+.entry--tags > p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: light-dark(var(--color-surface-l500),var(--color-surface-d500) );
 }

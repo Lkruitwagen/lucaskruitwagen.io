@@ -6,6 +6,7 @@ import About from './pages/about';
 import Blog from './pages/blog';
 import Speaking from './pages/speaking';
 import Code from './pages/code';
+import EntryPage from './pages/entry';
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<EntryPage />} />
       <Route path="/speaking" element={<Speaking />} />
       <Route path="/code" element={<Code />} />
     </Routes>

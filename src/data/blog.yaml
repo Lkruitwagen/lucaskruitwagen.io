@@ -1,4 +1,5 @@
 - title: The Darkest Timeline
+  slug: the-darkest-timeline
   date: 2016-11-10
   highlight: true
   tags:
@@ -9,6 +10,7 @@
       url: https://medium.com/@LucasKruitwagen/the-darkest-timeline-ab993ba00c8
       external: true
 - title: Our Beautiful Planet, Delivered Daily
+  slug: our-beautiful-planet-delivered-daily
   date: 2023-02-12
   highlight: true
   tags:
@@ -19,16 +21,33 @@
       url: https://medium.com/@LucasKruitwagen/our-beautiful-planet-delivered-daily-fa9bf666b0e9
       external: true
 - title: Systems Modelling from Scratch (part 1)
+  slug: systems-modelling-from-scratch-part-1
   date: 2023-11-14
   highlight: true
+  abstract: >
+    In this tech blog we introduce the concept of Systems Modelling — and why it is such a powerful tool for charting a 
+    robust pathway to net-zero. In Part 1, we discuss how a systems model is designed and optimised, 
+    and some of the limits to these tools. In Part 2, we prepare a systems model from scratch 
+    for a sector-coupled steel supply chain.
   tags:
     - technical
     - systems modelling
+  authors:
+    - label: Lucas Kruitwagen
+      url: https://lucaskruitwagen.com
+    - label: Abishek Shivakumar
+      url: https://www.linkedin.com/in/abhishek-shivakumar-7841a621/
   links:
     - label: Medium
       url: https://transitionzero.medium.com/systems-modelling-from-scratch-part-1-d753f1375149
       external: true
 - title: Systems modelling from Scratch (part 2)
+  slug: systems-modelling-from-scratch-part-2
+  abstract: >
+    In this tech blog we introduce the concept of Systems Modelling — and why it is such a powerful tool for charting a 
+    robust pathway to net-zero. In Part 1, we discuss how a systems model is designed and optimised, 
+    and some of the limits to these tools. In Part 2, we prepare a systems model from scratch 
+    for a sector-coupled steel supply chain.
   date: 2023-11-14
   highlight: true
   tags:
@@ -39,6 +58,7 @@
       url: https://transitionzero.medium.com/systems-modelling-from-scratch-part-2-a7a0a3b77682
       external: true
 - title: Transition Risk in the global coal, oil, and gas supply chains
+  slug: transition-risk-in-the-global-coal-oil-and-gas-supply-chains
   date: 2021-02-18
   highlight: true
   tags:
@@ -49,6 +69,7 @@
       url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3783412
       external: true
 - title: "Wave2Web: Near-real-time reservoir availability prediction for water security in India"
+  slug: wave2web
   date: 2022-06-02
   highlight: true
   tags:
@@ -59,6 +80,7 @@
       url: https://eartharxiv.org/repository/view/3381/
       external: true
 - title: A global inventory of utility-scale solar photovoltaic generating units
+  slug: global-inventory-of-utility-scale-solar-photovoltaic-generating-units
   date: 2021-10-27
   highlight: true
   tags:
@@ -72,9 +94,10 @@
       url: https://www.nature.com/articles/d41586-021-02875-y
       external: true
     - label: The Economist
-      url: abcs
+      url: https://www.economist.com/science-and-technology/an-accurate-tally-of-the-worlds-solar-power-stations/21805945
       external: true
 - title: Self-supervised learning of Sentinel-2 timeseries for agricultural applications
+  slug: self-supervised-learning-of-sentinel-2-timeseries-for-agricultural-applications
   date: 2021-09-01
   highlight: true
   tags:
@@ -85,6 +108,7 @@
       url: https://drive.google.com/file/d/134iyVV2ScF_hDGu3Md3wy5PSojT5kfhe/view
       external: true
 - title: A techno-economic and financial analysis of a GCC–India undersea electricity interconnector
+  slug: a-techno-economic-and-financial-analysis-of-a-gcc-india-undersea-electricity-interconnector
   date: 2021-08-03
   highlight: true
   tags: 

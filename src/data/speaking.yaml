@@ -3,33 +3,35 @@
   venue: Olympia London
   date: 2024-04-30
   links:
-    - label: hello
-      url: upyabutt
+    - label: InnovationZero
+      url: https://www.innovationzero.com/innovation-zero-2024-1/deep-tech-as-an-essential-catalyst-for-business-decarbonisation
 - title: "Uncovering the Black Box: Ensuring transparency in Systems Modeling and AI-based tools for planning and decision-making"
   host: COP28 Blue Zone
   venue: Meeting Room 36, B2 Building 10, Blue Zone
   date: 2023-12-04
   links:
-    - label:  hello
-      url: hello
+    - label:  Webcast
+      url: https://unfccc.int/event/uncovering-the-black-box-ensuring-transparency-in-systems-modeling-and-ai-based-tools-for-planning
 - title: Addressing the Attribution Gap in Climate Risk Intelligence
   host: Earth System Predictability Forum
   venue: Online
   date: 2023-05-10
   links:
-    - label: hello
-      url: upyabut
+    - label: Report
+      url: https://trillium.tech/esp
+    - label: Slides
+      url: https://docs.google.com/presentation/d/19xZV5e84K26GAhZlPuaeccMANmqQyTT8A4XBm-mv5Ao/edit?usp=sharing
 - title: Novel Hydrological Drought Index
   host: World Food Programme EO & AI for SDGs Innovation Programme Project Showcase
   venue: Online
   date: 2022-09-22
   links:
-    - label: hello
-      url: upyabutt
+    - label: WFP Blog
+      url: https://wfpinnovation.medium.com/fighting-world-hunger-through-earth-observation-and-artificial-intelligence-147c5d47e09f
 - title: Platform-Scale Systems Modelling
   host: OpenMod Workshop 2024
   venue: Université Grenoble Alpes
   date: 2024-03-27
   links:
-    - label: hellp
-      url: upasdas
+    - label: Slides
+      url: https://docs.google.com/presentation/d/1ztzsD-tNkV440AwtdZ97pUkVFLQObWAUM8EzqzBcTKY/edit#slide=id.g29dd824d6f5_0_320

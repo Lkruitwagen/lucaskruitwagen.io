@@ -4,6 +4,7 @@ import BlogData from "../data/blog.yaml";
 import CodeCard from '../components/CodeCard'
 import BusinessCard from '../components/BusinessCard'
 import {Highlights} from '../components/Highlights'
+import {Link } from 'react-router-dom'
 
 export default function Home() {
 
@@ -46,11 +47,11 @@ export default function Home() {
         <div className="highlights">
                 <div className="highlights--header">
                     <span> Open Source </span>
-                    <form>
-                        <button formAction="/code">
+                    <Link to={"/code"}>
+                        <button>
                             all code
                         </button>
-                    </form>
+                    </Link>
                 </div>
         </div>
         <div className="codecards">

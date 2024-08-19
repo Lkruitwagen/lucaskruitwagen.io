@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSearchParams, Link } from "react-router-dom";
 import Select  from "react-select";
 import BlogData from "../data/blog.yaml";
 
@@ -37,7 +38,12 @@ function Entry(props) {
     return (
         <div className="blog--entry">
             <div className="blog--entry--header">
-                <span>{props.post.title}</span>
+                <Link to={"/blog/"+props.post.slug}>
+                    <span>
+                        {props.post.title}
+                    </span>
+                </Link>
+                
                 <p>
                     {months[props.post.date.getMonth()] + " " + props.post.date.getFullYear()}
                 </p>
@@ -50,7 +56,14 @@ function Entry(props) {
 
 export default function Blog() {
 
-    const [selected, setSelected] = useState([]);
+    const [searchParams] = useSearchParams();
+
+    const url_tags = searchParams.get('tags')?.split(',').filter(tag => all_tags.includes(tag)).map((tag) => {
+        return {'label':tag, 'value':tag}
+        }
+    );
+
+    const [selected, setSelected] = useState(url_tags ? url_tags : []);
 
     const selected_keys = selected.map((option) => option.value);
 
