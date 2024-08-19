@@ -31,7 +31,7 @@ This site is one-click deployed with [Vercel](https://vercel.com/) and a simple 
 
 ## Inspo
 
-The design of this personal site is inspired by (Tania Rascia's personal site)[https://www.taniarascia.com/]
+The design of this personal site is inspired by [Tania Rascia's personal site](https://www.taniarascia.com/)
 
 ## License
 
