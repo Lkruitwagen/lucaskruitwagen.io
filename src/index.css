@@ -105,7 +105,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   place-items: center;
-  min-width: 520px;
+  min-width: 400px;
   min-height: 100vh;
   color: light-dark(black,white);
   background-color: light-dark(var(--color-surface-l100), var(--color-surface-d100));
@@ -120,10 +120,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
-}
-
-@media screen {
-  
 }
 
 
@@ -283,19 +279,67 @@ nav > div > img {
 }
 
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 560px) {
+  #root {
+    --content-width: 400px;
+  }
+  .nav--full {
+    display: none;
+  }
+
+  .codecard {
+    min-height: auto;
+    max-width: 400px;
+    height: auto;
+    width: auto:
+  }
+  .introduction--col {
+    max-width: var(--content-width);
+  }
+  #photo--border {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #root {
+    --content-width: 560px;
+  }
   .nav--full {
       display: none;
+  }
+  .introduction--col {
+    max-width: var(--content-width);
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  #root {
+    --content-width: 700px;
+  }
+  .nav--full {
+      display: none;
+  }
+  .introduction--col {
+    max-width: var(--content-width);
   }
 }
 
 @media only screen and (min-width: 920px) {
+  #root {
+    --content-width: 860px;
+  }
   .nav--dropdown {
       display: none;
   }
 
   .introduction--col {
     max-width: 422px;
+  }
+
+  .codecard {
+    min-height: 200px;
   }
 }
 
@@ -426,7 +470,6 @@ button:focus-visible {
   border-radius: 0.5rem;
   height: 200px;
   width: 422px;
-  
   background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
 }
 
