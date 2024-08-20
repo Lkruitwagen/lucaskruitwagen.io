@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar(props) {
 
@@ -54,7 +56,7 @@ export default function Navbar(props) {
                 <span> Lucas Kruitwagen</span>
             </Link>
                 
-            <div>
+            <div className="nav--full">
                 <ul>
                     <li><Link to="/blog">writing</Link></li>
                     <li><Link to="/speaking">speaking</Link></li>
@@ -64,6 +66,17 @@ export default function Navbar(props) {
                 <button className="dark--button" onClick={darkToggle}>
                     {isDark ? <img src="/sun.svg" /> : <img src="/moon.svg" />}
                 </button>
+            </div>
+            <div className="nav--dropdown">
+                <button className="dropbtn">
+                    <FontAwesomeIcon icon={faBars} size="xl"/>
+                </button>
+                <div className="dropdown-content">
+                    <Link to="/blog">writing</Link>
+                    <Link to="/speaking">speaking</Link>
+                    <Link to="/code">open source</Link>
+                    <Link to="/about">about</Link>
+                </div>
             </div>
         </nav>
     )

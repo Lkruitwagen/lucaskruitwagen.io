@@ -1,3 +1,7 @@
+#root {
+  padding: 0 2rem;
+}
+
 :root {
   font-family: "Space Grotesk", "Space Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -71,8 +75,9 @@
 }
 
 .two--col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: start;
   gap: 1rem;
 }
 
@@ -107,9 +112,8 @@ body {
 }
 
 .layout {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  width: var(--content-width);
+  padding: 1rem 0rem;
+  max-width: var(--content-width);
 }
 
 .introduction {
@@ -117,6 +121,11 @@ body {
   flex-flow: column nowrap;
   align-items: start;
 }
+
+@media screen {
+  
+}
+
 
 .introduction > span {
   font-size: 3em;
@@ -166,6 +175,7 @@ body {
   padding: 2rem;
   margin-top: 2rem;
   height: 358px;
+  width: 358px;
 }
 
 #photo--border > img {
@@ -190,11 +200,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  width: var(--content-width);
+  max-width: var(--content-width);
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.25rem 0;
+  padding: 1.25rem 0rem;
   border-bottom: solid light-dark(var(--color-surface-l300),var(--color-surface-d300) );
   background-color: light-dark(var(--color-surface-l100),var(--color-surface-d100) );
 }
@@ -232,6 +242,61 @@ nav > a > span {
 nav > div > img {
   color: #fff;
   margin: 8px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: inherit;
+  top: 0px;
+  right: 0px;
+  background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.nav--dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: inherit;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: light-dark(var(--color-surface-l200),var(--color-surface-d300) );
+}
+
+.dropbtn {
+  padding: 0;
+  background-color: inherit;
+}
+
+
+@media only screen and (max-width: 920px) {
+  .nav--full {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .nav--dropdown {
+      display: none;
+  }
+
+  .introduction--col {
+    max-width: 422px;
+  }
 }
 
 button {
@@ -314,21 +379,11 @@ button:focus-visible {
 }
 
 .highlight--title > p {
-  font-.highlight--title > span {
-  font-size: 1.0rem;
-  font-weight: 500;
-  color: light-dark(var(--color-primary-l600),var(--color-primary-d600) );
-}
-
-.highlight--title > p {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.8rem;
   color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
   margin: 0px;
-}family: 'IBM Plex Mono', monospace;
-  font-size: 0.8rem;
-  color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
-  margin: 0px;
+  min-width: 62px;
 }
 
 .highlight--links {
@@ -357,8 +412,8 @@ button:focus-visible {
 }
 
 .codecards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-flow: row wrap;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -370,6 +425,8 @@ button:focus-visible {
   padding: 1rem;
   border-radius: 0.5rem;
   height: 200px;
+  width: 422px;
+  
   background-color: light-dark(var(--color-surface-l150),var(--color-surface-d200) );
 }
 
@@ -452,6 +509,8 @@ button:focus-visible {
 
 .select--container {
   padding: 12px 0 2px 0px;
+  z-index: -1 !important;
+  /* position: absolute */
 }
 
 .entries {
@@ -484,6 +543,7 @@ button:focus-visible {
   font-size: 0.8rem;
   color: light-dark(var(--color-surface-l600),var(--color-surface-d600) );
   margin: 0px;
+  min-width: 62px;
 }
 
 .logo--imgs {

@@ -11,7 +11,10 @@ const BusinessCardAbout = () => {
     return (
         <div>
             <div className="two--col">
-                <div className="introduction"> 
+                <div id="photo--border">
+                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
+                </div>
+                <div className="introduction introduction--col"> 
                     <span> About me. </span>
                     <p>
                         I'm a technical founder with domain expertise in energy systems, weather, and climate.
@@ -25,9 +28,6 @@ const BusinessCardAbout = () => {
                         We built a platform for energy systems modelling - the numerical analysis tooling that provides projections of the energy system, 
                         used in everything from motivating new investment decisions to designing net-zero emissions grids.
                     </p>
-                </div>
-                <div id="photo--border">
-                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
                 </div>
             </div>
             <div className="introduction">
@@ -123,7 +123,12 @@ const BusinessCardHome = () => {
 
     return (
         <div className="two--col">
-            <div className="introduction"> 
+            <div>
+                <div id="photo--border">
+                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
+                </div>
+            </div>
+            <div className="introduction introduction--col"> 
                 <span> Hi! I'm Lucas. </span>
                 <p>
                     I’m a climate-tech leader who builds software and datasets to support the energy transition. 
@@ -143,11 +148,7 @@ const BusinessCardHome = () => {
                 </div>
             </div>
             
-            <div>
-                <div id="photo--border">
-                    <img id="lk-img" src="/psychadelic-lk-green-light.png"/>
-                </div>
-            </div>
+            
         </div>
     );
   }
