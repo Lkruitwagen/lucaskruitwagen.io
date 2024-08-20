@@ -729,3 +729,7 @@ button:focus-visible {
   font-weight: 300;
   color: light-dark(var(--color-surface-l500),var(--color-surface-d500) );
 }
+
+#substack-logo {
+  width: 28px;
+}
