@@ -6,6 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGoogleScholar } from '@fortawesome/free-brands-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import  SubstackLogo  from '../assets/substack'
 
 const BusinessCardAbout = () => {
     return (
@@ -145,6 +146,7 @@ const BusinessCardHome = () => {
                     <a href="https://www.linkedin.com/in/lucaskruitwagen/"><FontAwesomeIcon className="icon" icon={faLinkedin} size='2x'/></a>
                     <a href="https://twitter.com/LucasKruitwagen"><FontAwesomeIcon className="icon" icon={faTwitter} size='2x'/></a>
                     <a href="https://scholar.google.com/citations?user=Jw0EwYEAAAAJ&hl=en"><FontAwesomeIcon className="icon" icon={faGoogleScholar} size='2x'/></a>
+                    <a href="https://substack.com/@lucaskruitwagen"><SubstackLogo /></a>    
                 </div>
             </div>
             
