@@ -118,8 +118,6 @@ const BusinessCardAbout = () => {
 
 const BusinessCardHome = () => {
 
-    console.log('classes',document.body.classList)
-
     const img_src = "/psychadelic-lk-green.png"
 
     return (

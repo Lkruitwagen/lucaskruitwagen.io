@@ -57,8 +57,6 @@ function Highlight(props) {
 
 function Highlights(props) {
 
-        console.log('props - tag', props.tag);
-    
         const highlights = props.highlights?.filter((highlight) => (highlight.highlight && highlight.tags.includes(props.tag))).map((highlight) => {
                 return (
                     <Highlight 
