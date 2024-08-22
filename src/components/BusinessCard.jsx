@@ -155,13 +155,15 @@ const BusinessCardHome = () => {
     );
   }
 
-function BusinessCard(props) {
+class BusinessCard extends React.Component {
 
-    return (
-        <div>
-            {props.is_about ? <BusinessCardAbout /> : <BusinessCardHome />}
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                {this.props.is_about ? <BusinessCardAbout /> : <BusinessCardHome />}
+            </div>
+        )
+    }
 }
 
 export default BusinessCard
