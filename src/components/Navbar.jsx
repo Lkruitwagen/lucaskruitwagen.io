@@ -3,20 +3,21 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-export default function Navbar(props) {
+export default class NavBar extends React.Component {
 
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    constructor(props) {
+        super(props);
 
-    const [isDark, setIsDark] = React.useState(prefersDark)
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+        this.state = {isDark: prefersDark};
 
-    console.log('isDark', isDark)
+        this.darkToggle = this.darkToggle.bind(this);
 
-    function darkToggle() {
-        setIsDark(prevDark => (!prevDark));
+        this.handleDark(prefersDark);
     }
 
-    React.useEffect(() => {
-
+    handleDark(isDark) {
         let img_srcs = [
             "lk-img",
             "ac-logo",
@@ -47,37 +48,44 @@ export default function Navbar(props) {
                 }
             }
         }
+    }
 
-    }, [isDark])
 
-    return (
-        <nav>
-            <Link to="/">
-                <span> Lucas Kruitwagen</span>
-            </Link>
-                
-            <div className="nav--full">
-                <ul>
-                    <li><Link to="/blog">writing</Link></li>
-                    <li><Link to="/speaking">speaking</Link></li>
-                    <li><Link to="/code">open source</Link></li>
-                    <li><Link to="/about">about</Link></li>
-                </ul>
-                <button className="dark--button" onClick={darkToggle}>
-                    {isDark ? <img src="/sun.svg" /> : <img src="/moon.svg" />}
-                </button>
-            </div>
-            <div className="nav--dropdown">
-                <button className="dropbtn">
-                    <FontAwesomeIcon icon={faBars} size="xl"/>
-                </button>
-                <div className="dropdown-content">
-                    <Link to="/blog">writing</Link>
-                    <Link to="/speaking">speaking</Link>
-                    <Link to="/code">open source</Link>
-                    <Link to="/about">about</Link>
+    darkToggle() {
+        this.handleDark(!this.state.isDark);
+        this.setState({isDark: !this.state.isDark});
+    }  
+
+    render() {
+        return (
+            <nav>
+                <Link to="/">
+                    <span> Lucas Kruitwagen</span>
+                </Link>
+                    
+                <div className="nav--full">
+                    <ul>
+                        <li><Link to="/blog">writing</Link></li>
+                        <li><Link to="/speaking">speaking</Link></li>
+                        <li><Link to="/code">open source</Link></li>
+                        <li><Link to="/about">about</Link></li>
+                    </ul>
+                    <button className="dark--button" onClick={this.darkToggle}>
+                        {this.state.isDark ? <img src="/sun.svg" /> : <img src="/moon.svg" />}
+                    </button>
                 </div>
-            </div>
-        </nav>
-    )
+                <div className="nav--dropdown">
+                    <button className="dropbtn">
+                        <FontAwesomeIcon icon={faBars} size="xl"/>
+                    </button>
+                    <div className="dropdown-content">
+                        <Link to="/blog">writing</Link>
+                        <Link to="/speaking">speaking</Link>
+                        <Link to="/code">open source</Link>
+                        <Link to="/about">about</Link>
+                    </div>
+                </div>
+            </nav>
+        )
+    }
 }

@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import BusinessCard from '../components/BusinessCard'
 
-export default function About() {
+export default class About extends React.Component {
 
-  return (
-    <div className='layout'>
-        <BusinessCard is_about={true}/>
-    </div>
-  )
+    render() {
+        return (
+            <div className='layout'>
+                <BusinessCard is_about={true}/>
+            </div>
+        )
+    }
 }

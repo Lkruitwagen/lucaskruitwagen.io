@@ -118,8 +118,6 @@ const BusinessCardAbout = () => {
 
 const BusinessCardHome = () => {
 
-    console.log('classes',document.body.classList)
-
     const img_src = "/psychadelic-lk-green.png"
 
     return (
@@ -155,13 +153,15 @@ const BusinessCardHome = () => {
     );
   }
 
-function BusinessCard(props) {
+class BusinessCard extends React.Component {
 
-    return (
-        <div>
-            {props.is_about ? <BusinessCardAbout /> : <BusinessCardHome />}
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                {this.props.is_about ? <BusinessCardAbout /> : <BusinessCardHome />}
+            </div>
+        )
+    }
 }
 
 export default BusinessCard
