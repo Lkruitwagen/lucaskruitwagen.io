@@ -55,7 +55,7 @@ const BusinessCardAbout = () => {
                             </div>
                         </div>
                         <p>
-                            Fundraising (grants+venture); business modelling; recruitment; OKRs & management; tech culture; agile (professional scrum master).
+                            Fundraising (grants+venture); business modelling; recruitment; OKRs & management; tech culture; agile (<a href="https://www.scrum.org/user/1458755">PSM1</a>).
                         </p>
                     </div>
                     <div className="introduction--cv">
