@@ -9,6 +9,17 @@
     - label: Medium
       url: https://medium.com/@LucasKruitwagen/the-darkest-timeline-ab993ba00c8
       external: true
+- title: Start with How
+  slug: start-with-how
+  date: 2024-10-04
+  highlight: true
+  tags:
+    - CTO
+    - agile
+  links:
+    - label: substack
+      url: https://lucaskruitwagen.substack.com/p/start-with-how
+      external: true
 - title: Our Beautiful Planet, Delivered Daily
   slug: our-beautiful-planet-delivered-daily
   date: 2023-02-12
