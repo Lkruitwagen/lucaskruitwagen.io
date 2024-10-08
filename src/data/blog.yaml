@@ -9,10 +9,15 @@
     - label: Medium
       url: https://medium.com/@LucasKruitwagen/the-darkest-timeline-ab993ba00c8
       external: true
+  abstract: >
+    Raw reaction to the 2016 US election results.
 - title: Start with How
   slug: start-with-how
   date: 2024-10-04
   highlight: true
+  abstract: >
+    This is my living document of the how of software development, as I understand it. 
+    It’s what I wished I’d known then; what I think I’d add; and what I still don’t know.
   tags:
     - CTO
     - agile
@@ -26,11 +31,13 @@
   highlight: true
   tags:
     - technical
-    - earth overservation
+    - earth observation
   links:
     - label: Medium
       url: https://medium.com/@LucasKruitwagen/our-beautiful-planet-delivered-daily-fa9bf666b0e9
       external: true
+  abstract: >
+    This tech blog shows how I used Sentinel-2 imagery to daily update a google images gallery, for use as a screensaver around the house.
 - title: Systems Modelling from Scratch (part 1)
   slug: systems-modelling-from-scratch-part-1
   date: 2023-11-14
@@ -79,6 +86,18 @@
     - label: SSRN
       url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3783412
       external: true
+  abstract: >
+    Climate change risks manifest in the real economy, with grave consequences for welfare of human populations and the biosphere; 
+    the economic returns of industrial sectors; and geopolitical stability. Understanding the diffusion of risks in real infrastructure networks 
+    is an urgent priority for delivering climate change mitigation, adaptation, and resiliency. The oil, gas, and coal supply chains are the most 
+    salient progenitors and inheritors of these environmental risks. We prepare a geospatial arrangement of the global oil, gas, and coal supply chains 
+    using open-source asset-level data. The resulting complex network has 6.09mn nodes and 15.70mn edges and is implemented in a graph database. 
+    With estimates of annual coal, gas, and oil demand in 13,229 global population centres and 8,165 global power stations, we use a minimum-cost 
+    flow method to estimate global asset-level energy flows. We develop a method for cross-validating and tuning our network flow simulation using 
+    aggregate country-level import and export statistics. We demonstrate two analyses of asset-level transition risk: a counter-factual demand shock 
+    scenario consistent with the IEA Sustainable Development Scenario; and supply shock scenarios developed by interdicting regionally-aggregated coal, 
+    oil, and gas supplies. Our contribution lies in the global scope of our asset-level supply chain and the novelty of our minimum-cost flow method. 
+    We conclude with a discussion of further research directions and make the graph database and supporting code publicly available.
 - title: "Wave2Web: Near-real-time reservoir availability prediction for water security in India"
   slug: wave2web
   date: 2022-06-02
@@ -90,6 +109,17 @@
     - label: EarthArXiv
       url: https://eartharxiv.org/repository/view/3381/
       external: true
+  abstract: >
+    By 2050, over half the world's population will live in water-stressed areas. 
+    Medium-term drought forecasting can help planners avoid ``day-zero'' events and adapt to climate change. 
+    Machine learning-based precipitation-runoff modelling enables the prediction of surface water flow using only the meteorological record of a water basin.
+    In this work, we extend a Bayesian LSTM precipitation-runoff model with graph convolutions based on hydrological basin adjacency to predict reservoir water 
+    availability for sixty-six reservoirs in India. Employing a "sequence-to-sequence-to-sequence" model allows predictions to be based on the combination of 
+    meteorological forcing data and ex-ante forecast data while producing predictions to a ninety-day future horizon. On a held-back test set of daily reservoir 
+    water availability changes, we achieve a coefficient of determination of 0.372 for the maximum likelihood estimate for the 1-to-5 day horizon averaged across 
+    all sites, which reduces to 0.337 for the 75-to-90 day horizon. We also find that removing the graph convolutional layer increases mean performance by 0.82 
+    percentage points over the same horizons. This work represents the winning submission of the Wave2Web hackathon; the code and data is publicly available and 
+    near-real-time predictions are available at h2ox.org.
 - title: A global inventory of utility-scale solar photovoltaic generating units
   slug: global-inventory-of-utility-scale-solar-photovoltaic-generating-units
   date: 2021-10-27
@@ -107,6 +137,17 @@
     - label: The Economist
       url: https://www.economist.com/science-and-technology/an-accurate-tally-of-the-worlds-solar-power-stations/21805945
       external: true
+  abstract: >
+    Photovoltaic (PV) solar energy generating capacity has grown by 41 per cent per year since 2009. Energy system projections that mitigate climate change and 
+    aid universal energy access show a nearly ten-fold increase in PV solar energy generating capacity by 2040. Geospatial data describing the energy system 
+    are required to manage generation intermittency, mitigate climate change risks, and identify trade-offs with biodiversity, conservation and land protection 
+    priorities caused by the land-use and land-cover change necessary for PV deployment. Currently available inventories of solar generating capacity cannot fully 
+    address these needs. Here we provide a global inventory of commercial-, industrial- and utility-scale PV installations (that is, PV generating 
+    stations in excess of 10 kilowatts nameplate capacity) by using a longitudinal corpus of remote sensing imagery, machine learning and a large cloud computation 
+    infrastructure. We locate and verify 68,661 facilities, an increase of 432 per cent (in number of facilities) on previously available asset-level data. With the 
+    help of a hand-labelled test set, we estimate global installed generating capacity to be 423 gigawatts (−75/+77 gigawatts) at the end of 2018. Enrichment of our 
+    dataset with estimates of facility installation date, historic land-cover classification and proximity to vulnerable areas allows us to show that most of the PV 
+    solar energy facilities are sited on cropland, followed by aridlands and grassland. Our inventory could aid PV delivery aligned with the Sustainable Development Goals.
 - title: Self-supervised learning of Sentinel-2 timeseries for agricultural applications
   slug: self-supervised-learning-of-sentinel-2-timeseries-for-agricultural-applications
   date: 2021-09-01
@@ -118,6 +159,28 @@
     - label: Technical Memo
       url: https://drive.google.com/file/d/134iyVV2ScF_hDGu3Md3wy5PSojT5kfhe/view
       external: true
+  abstract: >
+    Large amounts of imagery and data are produced every day by an ever growing multitude of
+    earth observation satellites. The potential to apply Deep Learning methods is enormous, but depends 
+    largely on the availability of corresponding labeled data. Developed regions such as Europe
+    and North America have organizational structures that have collected crop data for many decades,
+    however, these archives of data are not available in less developed regions, such as Eastern Africa.
+    Labels in agriculture related applications are specially hard to obtain, requiring surveys as in general
+    the crop type or state can not be determined from mid resolution satellite imagery. The surveys
+    require a large amount of people and resources rending them costly. For this reason, it is not simple 
+    to deploy sampling campaigns. Therefore, obtaining rich semantic information from the large
+    amount of unlabelled data would reduce the cost of exploiting the satellite imagery and enable less
+    developed countries to exploit temporal crop information. Self supervised methods seek to generate
+    embeddings (lower dimensional representations) with designed invariances. In this work, we explore
+    invariances appropriate to agriculture and crop classifiction e.g. invariances within seasons, regions
+    and crops. However, we encounter multiple challenges in this process. Existing tools are limited for
+    multiband timeseries data extraction and consolidation at a scale, making it time consuming to generate 
+    large datasets for the purpose of self-supervised tasks. Also, training models to capture specific
+    invariances and evaluating the validity of these invariances is hard. In this document we capture
+    the different learnings of generating self-supervised embeddings that are relevant for crop detection
+    and classification including: current literature on the subject, a method to generate large multiband
+    and multitemporal datasets in a fast manner and different methods to learning embeddings of single
+    image and timeseries of images for the purpose of detection and classification of crops.
 - title: A techno-economic and financial analysis of a GCC–India undersea electricity interconnector
   slug: a-techno-economic-and-financial-analysis-of-a-gcc-india-undersea-electricity-interconnector
   date: 2021-08-03
@@ -129,13 +192,212 @@
     - label: Climate Compatible Growth
       url: https://climatecompatiblegrowth.com/wp-content/uploads/2021/08/2B-COP26-Policy-Brief.pdf
       external: true
-# "DeepSentinel: Self-supervised Sentinel-1, Sentinel-2 sensor fusion for general purpose semantic embedding"
-# Aerosol effects on mesoscale structures in marine boundary layer clouds
-# Power Sector Asset Networks: determinants of the diffusion of renewables 2007 through 2017
-# Climate risk analysis from space: remote sensing, machine learning, and the future of measuring climate-related risk  
-# Thermal Coal Power Stations
-# Financing 1.5 Degrees’, Conference Proceedings of 1.5 Degrees: Meeting the challenges of the Paris Agreement
-# Game theory and corporate governance: conditions for effective stewardship of companies subject to climate change risks
-# Carbon Capture and Storage in the thermal coal value chain.
-# Stranded Assets and Thermal Coal: An analysis of environment-related risks
-# Future Pathways to 1.5oC/2oC-Compatible Oil & Gas Majors: Survey of energy outlooks and key uncertainties
+  abstract: >
+    A techno-economic case for a Gulf Cooperation Council (GCC)–India interconnector is clear: an interconnector 
+    is part of the least-cost ‘optimal’ power system in 64 of the 75 scenarios studied. The financial case for the GCC–India 
+    interconnector is less clear. Of the projections developed for the scenarios from the techno-economic
+    model, only a small number are immediately investible. There is strong need to identify policy/market conditions to 
+    encourage such 'system-optimal' investments that are seen as risky from an investor's perspective.
+- title: "DeepSentinel: Self-supervised Sentinel-1, Sentinel-2 sensor fusion for general purpose semantic embedding"
+  slug: deepsentinel
+  date: 2021-02-11
+  highlight: false
+  tags: 
+    - earth observation
+    - research
+    - machine learning
+  links:
+    - label: ArXiv
+      url: https://arxiv.org/abs/2102.06260
+      external: true
+  abstract: >
+    Earth observation offers new insight into anthropogenic changes to nature, and how these changes are effecting (and are effected by) 
+    the built environment and the real economy. With the global availability of medium-resolution (10-30m) synthetic aperture radar (SAR) 
+    Sentinel-1 and multispectral Sentinel-2 imagery, machine learning can be employed to offer these insights at scale, unbiased to the 
+    reporting of companies and countries. In this paper, I introduce DeepSentinel, a data pipeline and experimentation framework for 
+    producing general-purpose semantic embeddings of paired Sentinel-1 and Sentinel-2 imagery. I document the development of an extensible 
+    corpus of labelled and unlabelled imagery for the purposes of sensor fusion research. With this new dataset I develop a set of experiments 
+    applying popular self-supervision methods and encoder architectures to a land cover classification problem. Tile2vec spatial encoding with 
+    a self-attention enabled ResNet model outperforms deeper ResNet variants as well as pretraining with variational autoencoding and contrastive 
+    loss. All supporting and derived data and code are made publicly available.
+- title: "Aerosol effects on mesoscale structures in marine boundary layer clouds"
+  slug: aerosol-effects-on-mesoscale-structures-in-marine-boundary-layer-clouds
+  date: 2020-08-01
+  highlight: false
+  tags: 
+    - causality
+    - earth observation
+    - machine learning
+    - research
+  links:
+    - label: Technical Memo
+      url: https://lkruitwagen.github.io/files/Clouds_Tech_Memo_FDLEUR2020.pdf
+      external: true
+  abstract: >
+    Marine boundary layer (MBL) clouds cover a vast area of the world’s oceans. 
+    In doing so, they reflect a large portion of incoming solar radiation, and so have a significant cooling impact on
+    the planetary energy budget. Even a small change in the properties of these cloud decks could have significant impacts on future climate change. 
+    Aerosols (particulate pollutants suspended in the atmosphere) interact with clouds by forming condensation nuclei which cloud droplets form around. 
+    Using observations from EUMETSAT’s MSG SEVIRI imager over the Southern Atlantic Ocean, we aim to better understand the aerosol impact on cloud structure
+      through the application of multiple machine learning methods.
+- title: "Power Sector Asset Networks: determinants of the diffusion of renewables 2007 through 2017"
+  slug: power-sector-asset-networks
+  date: 2018-08-01
+  highlight: false
+  tags: 
+    - complexity 
+    - research
+  links:
+    - label: Draft
+      url: https://lkruitwagen.github.io/files/LK_SusTec_Paper.pdf
+      external: true
+  abstract: >
+    The simultaneous expansion and decarbonisation of the global power sector is imperative for
+    achieving the mutually dependent goals of poverty alleviation and the mitigation of climate
+    change. Substantial policy and cost reductions in renewable generating options over the period
+    of 2007 to 2017 were met with a three-fold increase in global renewable generating capacity.
+    If sufficient renewable generating capacity is to be deployed to meet sustainable development
+    goals, early evidence of the dynamics thereof might be captured in this period.
+    Asset-level data sets of the global power sector have been obtained from S&P Market
+    Intelligence for the years 2007 through 2017. Power sector assets, companies, and countries
+    are arranged into a series of bipartite social networks for three fuel classes: fossil fueled
+    generation, low-carbon (nuclear and hydro) generation, and renewable generation. Bipartite
+    networks are projected on both company are country nodes to create directed networks. Basic
+    network properties are analysed over time to reveal basic trends in the emergence of
+    renewable generating options. The network analysis confirms that the ongoing energy
+    transition is one of paradigmatic insurgency rather than steady evolution. Renewable
+    generating companies are smaller and operate in more countries than incumbent fossil fuel
+    and low-carbon competitors. The country projection is analysed using a fixed effect model to
+    identify peer effects on the adoption of renewable generating options. Peer effects on the
+    adoption of renewable generating options given the fixed effect model as currently developed
+    are found to be insignificant.
+- title: "Climate risk analysis from space: remote sensing, machine learning, and the future of measuring climate-related risk"
+  slug: climate-risk-from-spce
+  date: 2018-07-01
+  highlight: false
+  tags: 
+    - earth observation
+    - machine learning
+    - research
+  links:
+    - label: Oxford Smith School
+      url: https://www.smithschool.ox.ac.uk/sites/default/files/2022-04/Remote-sensing-data-and-machine-learning-in-climate-risk-analysis.pdf
+      external: true
+  abstract: >
+    Accurate asset-level data can dramatically enhance the ability of investors, regulators,
+    governments, and civil society to measure and manage different forms of environmental risk,
+    opportunity, and impact. Asset-level data is information about physical and non-physical assets
+    tied to company ownership information. Remote sensing (and related technological developments such as machine learning) can help
+    secure better asset-level data and at higher refresh rates. In particular remote sensing can help
+    identify the features and use of assets relevant to determining asset-level GHG emissions.
+    We expect that the development of a global catalogue of every physical asset in the world to be
+    already within the reach of technical feasibility. 
+- title: "Thermal Coal Power Stations"
+  slug: thermal-coal-power-stations
+  date: 2017-10-02
+  highlight: false
+  tags: 
+    - energy transition
+    - research
+  links:
+    - label: Royal Society of Chemistry
+      url: https://books.rsc.org/books/edited-volume/673/chapter-abstract/373830/Coal-fired-Power-Stations?redirectedFrom=fulltext
+      external: true
+  abstract: >
+    Thermal coal-fired power stations currently provide approximately 40% of the world's electricity and 30% of the world's generating capacity. 
+    Approximately 83% of all coal demand is thermal coal, and 61% of primary coal energy is consumed in power stations. 
+    Notwithstanding alternatives in coal gasification, coal-to-liquids, and chemical looping technologies, the future of coal in the 21st century depends 
+    largely on the future of coal combustion for power generation. This chapter provides a technical overview of coal-fired power stations and their exposure 
+    to a wide array of environment-related risks, including greenhouse gas emissions and stranded assets; water consumption and competition with agriculture, 
+    industry, and domestic uses; climate stresses induced by anthropogenic climate change (of which they are the primary cause); competition with renewables 
+    and generating flexibility; costs and trade-offs of mitigation options; retrofitability with carbon capture and storage; and the availability of finance. 
+    The future of coal in the 21st century depends largely on the response of policy makers, industry and the concerned public to these risks.
+- title: "Financing 1.5 Degrees’, Conference Proceedings of 1.5 Degrees: Meeting the challenges of the Paris Agreement"
+  slug: financing-1-5-degrees
+  date: 2016-09-21
+  highlight: false
+  tags: 
+    - finance
+    - research
+  links:
+    - label: Conference Reporting
+      url: https://lkruitwagen.github.io/files/financing_1.5_degrees.pdf
+      external: true
+  abstract: >
+    The 1.5 degrees conference occurred during an ongoing shift in the finance industry’s
+    understanding of and response to the challenges of climate change. 
+    The investment community had an unprecedented presence at COP21 in Paris.  
+    It is now more clear than ever that everyone loses in a 3degC or 4degC world – the only way for investors to protectvalue is to smoothly transition to a 
+    less-than-2degC warming pathway.
+- title: "Game theory and corporate governance: conditions for effective stewardship of companies subject to climate change risks"
+  slug: game-theory-and-corporate-governance
+  date: 2016-06-08
+  highlight: false
+  tags: 
+    - finance
+    - game theory
+    - research
+  links:
+    - label: Journal of Sustainable Finance and Investment
+      url: https://www.tandfonline.com/doi/full/10.1080/20430795.2016.1188537
+      external: true
+  abstract: >
+    Engagement between investors and corporate boards has been suggested as a pathway to mitigate stranded asset and climate change risks. 
+    Debate is ongoing as to whether divestment or active ownership strategies are more appropriate to deliver long-term value and environmental sustainability. 
+    The paper tests the effectiveness of owner engagement strategies by studying the conditions for cooperation between investors and their companies. 
+    Characteristics of investors and companies are modelled in game theoretic frameworks, informed by semi-structured interviews with professionals from the energy and finance industries, and academia, NGO, and regulatory sectors. 
+    Conditions for mutual cooperation between investors and companies are characterized as prisoners’ dilemmas. A number of parameters are examined for their impact on the development of sustained cooperative equilibria, including: 
+    the benefits and costs of cooperation; the degree of strategic foresight; individual discount factors; and mutual history. 
+    Challenges in the formation of investor coalitions are characterized and solutions are proposed.
+- title: "Carbon Capture and Storage in the thermal coal value chain."
+  slug: ccs-thermal-coal-value-chain
+  date: 2016-05-01
+  highlight: false
+  tags: 
+    - energy transition
+    - research
+  links:
+    - label: Oxford Energy Forum
+      url: https://www.oxfordenergy.org/wpcms/wp-content/uploads/2016/06/OEF-105.pdf
+      external: true
+  abstract: >
+    Carbon Capture and Storage (CCS) has a role to play in deep, economywide decarbonization, with potential application in the mitigation of industry
+    and power sector emissions and late century negative emissions. Its high cost and low deployment to
+    date has, however, made it a critical uncertainty in climate and energy technology scenarios. Recent work by the Stranded Assets Programme of the
+    University of Oxford’s Smith School of Enterprise and the Environment (the ‘Oxford Smith School’) has identified the limited role CCS might play in
+    mitigating environment-related risk in the thermal coal value chain. We present the findings of this report and comment on the role CCS might play in the thermal coal value chain as a greenhouse gas (GHG) mitigation technology for coal-fi red power stations and for emerging coal-processing technologies. 
+- title: "Stranded Assets and Thermal Coal: An analysis of environment-related risks"
+  slug: stranded-assets-thermal-coal
+  date: 2016-01-01
+  highlight: false
+  tags: 
+    - energy transition
+    - research
+  links:
+    - label: Oxford Smith School
+      url: https://www.smithschool.ox.ac.uk/sites/default/files/2022-04/satc.pdf
+      external: true
+  abstract: >
+    The principal aim of this report is to turn the latest research on environment-related risk factors facing thermal
+    coal assets into actionable investment hypotheses for investors. By examining the fundamental drivers of
+    environment-related risk, creating appropriate measures to differentiate the exposure of different assets to
+    these risks, and linking this analysis to company ownership, debt issuance, and capital expenditure plans,
+    our research can help to inform specific investor actions related to risk management, screening, voting,
+    engagement, and disinvestment. To our knowledge, this report contains the most comprehensive and up-todate analysis of the environment-related risks facing thermal coal companies that is publicly available.
+- title: "Future Pathways to 1.5degC/2degC-Compatible Oil & Gas Majors: Survey of energy outlooks and key uncertainties"
+  slug: future-pathways-to-1-5degC-2degC-compatible-oil-and-gas-majors
+  date: 2016-09-01
+  highlight: false
+  tags: 
+    - energy transition
+    - research
+  links:
+    - label: Working Paper
+      url: https://lkruitwagen.github.io/files/scenarios_backgrounder.pdf
+      external: true
+  abstract: >
+    Major oil and gas companies face an existential threat from the transition to a low-carbon economy consistent
+    the Paris Agreement and a 1.5°C/2°C warming limit. 
+    This paper identifies key uncertainties in the transition of oil and gas company business models to become
+    compatible with a 1.5°C/2°C warming limit. This is done by comparing the energy outlooks, scenarios, and
+    projections of governments, NGOs/thinktanks and private companies. 

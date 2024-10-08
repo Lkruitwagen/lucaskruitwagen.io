@@ -15,3 +15,48 @@
     A project in support of the Oxford Martin Programme on the Post-Carbon Transition generously supported by Microsoft AI for Earth.
   repo: global-fossil-fuel-supply-chain
   org: Lkruitwagen
+- title: Solar PV Global Inventory
+  year: 2021
+  highlight: true
+  description: >
+    Repository for machine learning and remote sensing pipeline described in Kruitwagen, L. et al.(2021) 
+    A global inventory of photovoltaic solar energy generating units, Nature 598, 604–610. Generously supported by Descartes Labs, Microsoft AI for Earth, and the World Resources Institute.
+  repo: solar-pv-global-inventory
+  org: Lkruitwagen
+- title: DeepSentinel
+  year: 2021
+  highlight: true
+  description: >
+    DeepSentinel: a sentinel-1 and -2 sensor fusion model for semantic embedding. 
+    A Copernicus Master's Finalist supported by Descartes Labs Impact Science Programme and Microsoft AI for Earth.
+  repo: deepsentinel
+  org: Lkruitwagen
+- title: Teaching Spatial Methods
+  year: 2022
+  highlight: false
+  description: >
+    A repo for materials relating to the teaching of spatial methods, MSc in SSEE 2021.
+  repo: teaching_spatial_methods
+  org: Lkruitwagen
+- title: Teaching Computer Vision
+  year: 2022
+  highlight: false
+  description: >
+    Two-part lecture to introduct postgraduate students to computer vision approaches using Python and TensorFlow.
+  repo: teaching_computer_vision
+  org: Lkruitwagen
+- title: SatExtractor
+  year: 2021
+  highlight: true
+  description: >
+    SatExtractor gets all revisits in a date range from a given geojson region from any public satellite constellation and store it in a cloud friendly format.
+  repo: sat-extractor
+  org: FrontierDevelopmentLab
+- title: H2Ox-AI
+  year: 2022
+  highlight: true
+  description: >
+    H2Ox won first prize in theWave2Web Hackathon, September 2021, organised by the World Resources Institute 
+    and sponsored by Microsoft and Blackrock. H2Ox used sequence-to-sequence models with meterological and forecast forcing data to predict reservoir levels up to 90 days in the future.
+  repo: h2ox-ai
+  org: H2Oxford
