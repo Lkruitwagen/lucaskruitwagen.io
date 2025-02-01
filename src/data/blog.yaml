@@ -1,3 +1,40 @@
+- title: Introducing QuickRest
+  slug: introducing-quickrest
+  date: 2025-01-14
+  highlight: true
+  tags:
+    - technical
+    - backend
+  links:
+    - label: Substack
+      url: https://lucaskruitwagen.substack.com/p/introducing-quickrest
+      external: true
+    - label: GitHub
+      url: https://github.com/Lkruitwagen/quickrest/
+      external: true
+    - label: Docs
+      url: https://lkruitwagen.github.io/quickrest/
+      external: true
+  abstract: >
+    Deploy a full-featured API in an afternoon instead of weeks. Build an entire FastAPI application just by defining your database schema.
+- title: Self-hosting Dagster on GCP with GKE
+  slug: self-hosting-dagster-on-gcp-with-gke
+  date: 2024-11-01
+  highlight: true
+  tags:
+    - technical
+    - backend
+  links:
+    - label: Substack
+      url: https://lucaskruitwagen.substack.com/p/self-hosting-dagster-on-gcp-with
+      external: true
+    - label: GitHub
+      url: https://github.com/Lkruitwagen/dagster-k8s-demo
+      external: true
+  abstract: >
+    This demo is also a complete example for deploying a Dagster orchestration suite via a kubernetes (k8s) cluster on Google's Kubernetes Engine. 
+    This is a starting point for building a full back-end data engineering infrastructure, using Dagster as the orchestration framework, 
+    control entrypoint, and UI. 
 - title: The Darkest Timeline
   slug: the-darkest-timeline
   date: 2016-11-10
