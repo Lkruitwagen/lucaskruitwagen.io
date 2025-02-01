@@ -1,3 +1,10 @@
+- title: QuickREST
+  year: 2025
+  highlight: true
+  description: >
+    QuickREST is a FastAPI CRUD+Search generator to quickly build RESTful APIs, featuring configurable mixins and fine-grained access control.
+  repo: quickrest
+  org: Lkruitwagen
 - title: TZ-OSeMOSYS
   year: 2024
   highlight: true
